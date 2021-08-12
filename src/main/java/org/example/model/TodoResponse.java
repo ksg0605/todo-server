@@ -2,10 +2,7 @@ package org.example.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Generated;
 import lombok.NoArgsConstructor;
-
-import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
@@ -18,7 +15,7 @@ public class TodoResponse {
     private String url;
 
     public TodoResponse(TodoEntity todoEntity) {
-        this.id = todoEntity.getId();;
+        this.id = todoEntity.getId();
         this.title = todoEntity.getTitle();
         this.order = todoEntity.getOrder();
         this.completed = todoEntity.getCompleted();
